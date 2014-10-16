@@ -1,12 +1,13 @@
-require 'rails_sandbox/version'
+require_relative 'rails_sandbox/version'
+require 'active_record'
 
 module RailsSandbox
 
-  refine ::ActiveRecord::Base do
-    def sandbox
+  refine ActiveRecord::Base do
+    def self.sandbox
       result = nil
-      transaction do
-        result = yield if block_given
+      self.transaction do
+        result = yield if block_given?
         raise ActiveRecord::Rollback
       end
       result

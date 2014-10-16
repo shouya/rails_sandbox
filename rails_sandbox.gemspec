@@ -8,7 +8,7 @@ Gem::Specification.new do |spec|
   spec.version       = RailsSandbox::VERSION
   spec.authors       = ["Shou Ya"]
   spec.email         = ["shouyatf@gmail.com"]
-  spec.summary       = %q{provide a protective sandbox for database transactions}
+  spec.summary       = %q{establish a protective sandbox for database transactions}
   spec.description   = spec.summary
   spec.homepage      = "https://github.com/shouya/rails_sandbox"
   spec.license       = "MIT"
