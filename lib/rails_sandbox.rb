@@ -1,7 +1,8 @@
-module RailsSandbox
-  VERSION = "0.0.1"
+require 'rails_sandbox/version'
 
-  refine ActiveRecord::Base do
+module RailsSandbox
+
+  refine ::ActiveRecord::Base do
     def sandbox
       result = nil
       transaction do
