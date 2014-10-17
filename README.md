@@ -7,8 +7,6 @@ a tiny gem that provides a protective sandbox for database transactions.
 
 this gem is based on the magic of `ActiveRecord::Base#transaction`.
 
-this gem uses refinement feature, so please use ruby 2+.
-
 ## Installation
 
 Add this line to your application's Gemfile:
@@ -25,7 +23,7 @@ Or install it yourself as:
 
     $ gem install rails_sandbox
 
-## Usage
+## Usage Example
 
 in your model:
 
@@ -35,9 +33,6 @@ in your model:
 require 'rails_sandbox'
 
 class MyModel
-  # apply the refinement
-  using RailsSandbox
-
   def json_with_updated_attributes(params)
     # the json result with updated attributes will be returned while the actual
 	# record keeps unchanged
