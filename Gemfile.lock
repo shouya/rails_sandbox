@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    rails_sandbox (0.0.1)
+    rails_sandbox (0.0.2)
 
 GEM
   remote: https://rubygems.org/
