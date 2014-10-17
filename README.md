@@ -1,4 +1,7 @@
+[![Gem Version](https://badge.fury.io/rb/rails_sandbox.png)](https://rubygems.org/gems/rails_sandbox)
+
 # RailsSandbox
+
 
 a tiny gem that provides a protective sandbox for database transactions.
 

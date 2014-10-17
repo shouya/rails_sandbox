@@ -1,5 +1,6 @@
-require_relative 'rails_sandbox/version'
 require 'active_record'
+
+require 'rails_sandbox/version'
 
 module RailsSandbox
 
